@@ -11,7 +11,7 @@ Summary:	Visual simulator of and operating system
 Summary(pl):	Wizualny symulator systemu operacyjnego
 Name:		VisualOS
 Version:	1.0.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/visualos/%{name}-%{version}.tar.gz
@@ -20,12 +20,12 @@ Source1:	http://dl.sourceforge.net/visualos/%{name}-%{_doc_ver}-docs-pdf.tar.gz
 # Source1-md5:	c1523518371ec80a9df17476a298ca5f
 Source2:	%{name}.desktop
 URL:		http://visualos.sourceforge.net/
-BuildRequires:	automake
 BuildRequires:	autoconf
-BuildRequires:	libtool
-BuildRequires:	gnome-libs-devel
+BuildRequires:	automake
 BuildRequires:	gettext-devel
+BuildRequires:	gnome-libs-devel
 BuildRequires:	libglade-gnome-devel
+BuildRequires:	libtool
 BuildRequires:	transfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -82,6 +82,7 @@ install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 install %{SOURCE2} $RPM_BUILD_ROOT%{_desktopdir}
 
 %find_lang %{name}
@@ -95,8 +96,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
 %{_desktopdir}/%{name}.desktop
-#empty file!
-#%%{_mandir}/man?/*
 
 %if %{with pdf_docs}
 %files doc-pdf
