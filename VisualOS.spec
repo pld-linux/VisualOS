@@ -1,9 +1,10 @@
 #
 # TODO:
 # - add png icon for VisualOS
-
-%bcond_without  pdf_docs	#build pdf-doc
-
+#
+# Conditional build:
+%bcond_without  pdf_docs	# don't build pdf documentation
+#
 %define         _doc_ver	1.0.0
 
 Summary:	Visual simulator of and operating system
@@ -13,9 +14,9 @@ Version:	1.0.5
 Release:	1
 License:	GPL
 Group:		Applications/Emulators
-Source0:	http://dl.sourceforge.net/sourceforge/visualos/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/visualos/%{name}-%{version}.tar.gz
 # Source0-md5:	db0db4fe4251038fcfe0b2e7f5feefa4
-Source1:	http://dl.sourceforge.net/sourceforge/visualos/%{name}-%{_doc_ver}-docs-pdf.tar.gz
+Source1:	http://dl.sourceforge.net/visualos/%{name}-%{_doc_ver}-docs-pdf.tar.gz
 # Source1-md5:	c1523518371ec80a9df17476a298ca5f
 Source2:	%{name}.desktop
 URL:		http://visualos.sourceforge.net/
@@ -43,22 +44,22 @@ VisualOS jest "wizualnym symulatorem systemu operacyjnego", który
 pomaga studiowaæ i zrozumieæ jak dzia³a prawdziwy system operacyjny.
 
 Pozwala u¿ytkownikowi wstawiaæ procesy do uruchomionego systemu,
-przypisywaæ im w³a¶ciwo¶ci(wykorzystanie pamiêci, procesora, IO) a
+przypisywaæ im w³a¶ciwo¶ci (wykorzystanie pamiêci, procesora, IO) a
 VisualOS bêdzie dynamicznie pokazywaæ reprezentacje ka¿dego
 podsystemu. Mo¿na tak¿e wybraæ algorytm do wykorzystania w ka¿dym
 przypadku.
 
 %package doc-pdf
-Summary:	VisualOS documentation, pdf format
-Summary(pl):	Dokumentacja do VisualOS w formacie PostScript
+Summary:	VisualOS documentation, PDF format
+Summary(pl):	Dokumentacja do VisualOS w formacie PDF
 Group:		Applications/Emulators
-Requires:	%{name}
+Requires:	%{name} = %{version}-%{release}
 
 %description doc-pdf
-VisualOS documentation in pdf format.
+VisualOS documentation in PDF format.
 
 %description doc-pdf -l pl
-Dokumentacja do VisualOS w formacie pdf.
+Dokumentacja do VisualOS w formacie PDF.
 
 %prep
 %setup -q -a1
