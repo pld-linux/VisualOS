@@ -10,6 +10,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://unc.dl.sourceforge.net/sourceforge/visualos/%{name}-%{version}.tar.gz
+# Source0-md5:	9439dad74f5944e7028514cb135d14fb
 URL:		http://visualos.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	autoconf
