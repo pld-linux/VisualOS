@@ -6,7 +6,7 @@ Summary:	Visual simulator of and operating system
 Summary(pl):	Wizualny symulator systemu operacyjnego
 Name:		VisualOS
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/sourceforge/visualos/%{name}-%{version}.tar.gz
