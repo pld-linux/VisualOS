@@ -1,3 +1,7 @@
+#
+# TODO:
+# - add desktop and png icon for VisualOS
+#
 Summary:	visual simulator of and operating system
 Summary(pl):	wizualny symulator systemu operacyjnego
 Name:		VisualOS
@@ -7,11 +11,17 @@ License:	GPL
 Group:		Applications/Emulators
 Source0:	http://unc.dl.sourceforge.net/sourceforge/visualos/%{name}-%{version}.tar.gz
 URL:		http://visualos.sourceforge.net/
-BuildRequires:	gtk+-devel
+BuildRequires:	automake
+BuildRequires:	autoconf
+BuildRequires:	libtool
+BuildRequires:	gnome-libs-devel
+BuildRequires:	gettext-devel
+BuildRequires:	libglade-devel
 BuildRequires:	transfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix	/usr/X11R6/
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
 
 %description
 VisualOS is an "visual simulator of and operating system", that will
@@ -37,25 +47,30 @@ przypadku.
 %setup -q
 
 %build
-#%{__aclocal}
-#%{__automake}
-#%{__autoconf}
-%configure2_13
+sed -e s/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/ configure.in > configure.in.tmp
+mv -f configure.in.tmp configure.in
+rm -f missing
+%{__libtoolize}
+%{__aclocal}
+%{__autoconf}
+%{__automake}
+%configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
+%doc README TODO NEWS ChangeLog
 %attr(755,root,root) %{_bindir}/*
+%{_datadir}/%{name}
 %{_mandir}/man?/*
-%lang(fr) %{_datadir}/locale/fr/*/*
-%lang(it) %{_datadir}/locale/it/*/*
-%lang(es) %{_datadir}/locale/es/*/*
-%{_datadir}/%{name}/
-%doc README* TODO* NEWS* ChangeLog*
