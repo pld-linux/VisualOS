@@ -50,7 +50,8 @@ sed -e s/AM_GNOME_GETTEXT/AM_GNU_GETTEXT/ configure.in > configure.in.tmp
 mv -f configure.in.tmp configure.in
 rm -f missing
 %{__libtoolize}
-%{__aclocal}
+%{__gettextize}
+%{__aclocal} -I m4
 %{__autoconf}
 %{__automake}
 %configure
