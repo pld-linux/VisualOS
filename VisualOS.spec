@@ -16,7 +16,7 @@ BuildRequires:	autoconf
 BuildRequires:	libtool
 BuildRequires:	gnome-libs-devel
 BuildRequires:	gettext-devel
-BuildRequires:	libglade-devel
+BuildRequires:	libglade-gnome-devel
 BuildRequires:	transfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
