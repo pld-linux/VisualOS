@@ -2,8 +2,8 @@
 # TODO:
 # - add desktop and png icon for VisualOS
 #
-Summary:	visual simulator of and operating system
-Summary(pl):	wizualny symulator systemu operacyjnego
+Summary:	Visual simulator of and operating system
+Summary(pl):	Wizualny symulator systemu operacyjnego
 Name:		VisualOS
 Version:	1.0.4
 Release:	1
