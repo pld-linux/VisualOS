@@ -37,7 +37,7 @@ algorithm to be used in each case.
 VisualOS jest "wizualnym symulatorem systemu operacyjnego", który
 pomaga studiowaæ i zrozumieæ jak dzia³a prawdziwy system operacyjny.
 
-Pozwala u¿ytkownikowi wstawiac procesy do uruchomionego systemu,
+Pozwala u¿ytkownikowi wstawiaæ procesy do uruchomionego systemu,
 przypisywaæ im w³a¶ciwo¶ci(wykorzystanie pamiêci, procesora, IO) a
 VisualOS bêdzie dynamicznie pokazywaæ reprezentacje ka¿dego
 podsystemu. Mo¿na tak¿e wybraæ algorytm do wykorzystania w ka¿dym
