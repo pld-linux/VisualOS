@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=VisualOS
+Comment=Visual simulator of and operating system
+Comment[pl]=Wizualny symulator systemu operacyjnego
+Exec=VisualOS
+#Icon=
+Terminal=false
+Type=Application
+Categories=Emulator;
+Encoding=UTF-8
+# vi: encoding=utf-8
+
