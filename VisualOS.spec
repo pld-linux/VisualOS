@@ -5,12 +5,12 @@
 Summary:	Visual simulator of and operating system
 Summary(pl):	Wizualny symulator systemu operacyjnego
 Name:		VisualOS
-Version:	1.0.4
-Release:	2
+Version:	1.0.5
+Release:	1
 License:	GPL
 Group:		Applications/Emulators
 Source0:	http://dl.sourceforge.net/sourceforge/visualos/%{name}-%{version}.tar.gz
-# Source0-md5:	9439dad74f5944e7028514cb135d14fb
+# Source0-md5:	db0db4fe4251038fcfe0b2e7f5feefa4
 URL:		http://visualos.sourceforge.net/
 BuildRequires:	automake
 BuildRequires:	autoconf
@@ -73,4 +73,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README TODO NEWS ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
-%{_mandir}/man?/*
+#empty file!
+#%%{_mandir}/man?/*
