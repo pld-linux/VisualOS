@@ -3,9 +3,9 @@
 # - add png icon for VisualOS
 #
 # Conditional build:
-%bcond_without  pdf_docs	# don't build pdf documentation
+%bcond_without	pdf_docs	# don't build pdf documentation
 #
-%define         _doc_ver	1.0.0
+%define		_doc_ver	1.0.0
 
 Summary:	Visual simulator of and operating system
 Summary(pl):	Wizualny symulator systemu operacyjnego
