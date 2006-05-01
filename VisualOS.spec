@@ -52,7 +52,7 @@ przypadku.
 %package doc-pdf
 Summary:	VisualOS documentation, PDF format
 Summary(pl):	Dokumentacja do VisualOS w formacie PDF
-Group:		Applications/Emulators
+Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
 %description doc-pdf
