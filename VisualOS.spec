@@ -8,7 +8,7 @@
 %define		_doc_ver	1.0.0
 
 Summary:	Visual simulator of and operating system
-Summary(pl):	Wizualny symulator systemu operacyjnego
+Summary(pl.UTF-8):   Wizualny symulator systemu operacyjnego
 Name:		VisualOS
 Version:	1.0.5
 Release:	2
@@ -39,26 +39,26 @@ accesses) and VisualOS will dynamically show different graphical
 representations of each subsystem. It is also posible to select the
 algorithm to be used in each case.
 
-%description -l pl
-VisualOS jest "wizualnym symulatorem systemu operacyjnego", który
-pomaga studiowaæ i zrozumieæ jak dzia³a prawdziwy system operacyjny.
+%description -l pl.UTF-8
+VisualOS jest "wizualnym symulatorem systemu operacyjnego", ktÃ³ry
+pomaga studiowaÄ‡ i zrozumieÄ‡ jak dziaÅ‚a prawdziwy system operacyjny.
 
-Pozwala u¿ytkownikowi wstawiaæ procesy do uruchomionego systemu,
-przypisywaæ im w³a¶ciwo¶ci (wykorzystanie pamiêci, procesora, IO) a
-VisualOS bêdzie dynamicznie pokazywaæ reprezentacje ka¿dego
-podsystemu. Mo¿na tak¿e wybraæ algorytm do wykorzystania w ka¿dym
+Pozwala uÅ¼ytkownikowi wstawiaÄ‡ procesy do uruchomionego systemu,
+przypisywaÄ‡ im wÅ‚aÅ›ciwoÅ›ci (wykorzystanie pamiÄ™ci, procesora, IO) a
+VisualOS bÄ™dzie dynamicznie pokazywaÄ‡ reprezentacje kaÅ¼dego
+podsystemu. MoÅ¼na takÅ¼e wybraÄ‡ algorytm do wykorzystania w kaÅ¼dym
 przypadku.
 
 %package doc-pdf
 Summary:	VisualOS documentation, PDF format
-Summary(pl):	Dokumentacja do VisualOS w formacie PDF
+Summary(pl.UTF-8):   Dokumentacja do VisualOS w formacie PDF
 Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
 %description doc-pdf
 VisualOS documentation in PDF format.
 
-%description doc-pdf -l pl
+%description doc-pdf -l pl.UTF-8
 Dokumentacja do VisualOS w formacie PDF.
 
 %prep
