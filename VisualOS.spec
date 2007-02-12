@@ -8,7 +8,7 @@
 %define		_doc_ver	1.0.0
 
 Summary:	Visual simulator of and operating system
-Summary(pl.UTF-8):   Wizualny symulator systemu operacyjnego
+Summary(pl.UTF-8):	Wizualny symulator systemu operacyjnego
 Name:		VisualOS
 Version:	1.0.5
 Release:	2
@@ -51,7 +51,7 @@ przypadku.
 
 %package doc-pdf
 Summary:	VisualOS documentation, PDF format
-Summary(pl.UTF-8):   Dokumentacja do VisualOS w formacie PDF
+Summary(pl.UTF-8):	Dokumentacja do VisualOS w formacie PDF
 Group:		Documentation
 Requires:	%{name} = %{version}-%{release}
 
