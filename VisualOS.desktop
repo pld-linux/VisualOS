@@ -6,5 +6,4 @@ Exec=VisualOS
 Terminal=false
 Type=Application
 Categories=GTK;GNOME;Utility;Emulator;
-Encoding=UTF-8
 # vi: encoding=utf-8
