@@ -22,7 +22,7 @@ Source2:	%{name}.desktop
 URL:		http://visualos.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-libs-devel
 BuildRequires:	libglade-gnome-devel
 BuildRequires:	libtool
